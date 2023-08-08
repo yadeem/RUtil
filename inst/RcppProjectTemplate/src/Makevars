@@ -1,0 +1,19 @@
+MAKEFLAGS=-j
+CXX_STD=CXX17
+PKG_CPPFLAGS= -Wall -O3 -march=native -s -I"../../" -D_LINUX
+
+ifeq ($(OS),Windows_NT)  # is Windows_NT on XP, 2000, 7, Vista, 10...
+	OBJDIR = ../bin/win/obj/
+else
+	OBJDIR = ../bin/linux/obj/
+endif
+
+SOURCES = $(wildcard *.cpp *.cc)
+OBJECTS = $(addprefix $(OBJDIR), $(addsuffix .o, $(basename $(SOURCES))))
+
+all: $(SHLIB)
+
+$(OBJDIR)%.o:%.cc
+	$(CXX) $(ALL_CPPFLAGS) $(ALL_CXXFLAGS) -c $< -o $@
+$(OBJDIR)%.o:%.cpp
+	$(CXX) $(ALL_CPPFLAGS) $(ALL_CXXFLAGS) -c $< -o $@

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Config">
+      <UniqueIdentifier>{18970d2d-98da-4f3a-9413-d9b55e3cc026}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Doc">
+      <UniqueIdentifier>{896727c5-4f28-4af2-a878-17711fcb47cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SrcCpp">
+      <UniqueIdentifier>{819896d9-e436-4207-9b97-697100ce1eec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SrcCpp\Lib">
+      <UniqueIdentifier>{4cfc0206-4bae-4404-97ec-64bb480575d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SrcR">
+      <UniqueIdentifier>{53a7f796-1e7c-40cd-9603-e5086d1739ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{4d555ccc-9ed9-4f46-8746-60ed25cb9309}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="src\Makevars">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="man\RcppPrjTmpl-package.Rd">
+      <Filter>Doc</Filter>
+    </None>
+    <None Include="DESCRIPTION">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="R\package.r">
+      <Filter>SrcR</Filter>
+    </None>
+    <None Include="R\wrappers.RcppPrjTmpl.util.r">
+      <Filter>SrcCpp</Filter>
+    </None>
+    <None Include="R\RcppPrjTmpl.util.r">
+      <Filter>SrcR</Filter>
+    </None>
+    <None Include="R\RcppPrjTmpl.infra.r">
+      <Filter>SrcR</Filter>
+    </None>
+    <None Include="Script\build.RcppPrjTmpl.r">
+      <Filter>Script</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\libAegis.cpp">
+      <Filter>SrcCpp\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libAegisCC.cc">
+      <Filter>SrcCpp\Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RcppPrjTmplUtil.cpp">
+      <Filter>SrcCpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IndBasicRcpp.cpp">
+      <Filter>SrcCpp\Lib</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

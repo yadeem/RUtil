@@ -1,0 +1,7 @@
+*.sh text eol=lf
+
+*.sln             text eol=crlf
+*.vcxproj         text eof=crlf
+*.vcxproj.filters text eof=crlf
+*.vcxproj.user    text eof=crlf
+*.vcxitems        text eof=crlf

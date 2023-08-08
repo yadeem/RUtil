@@ -1,0 +1,14 @@
+Package: RUtil
+Type: Package
+Title: RUtil
+Version: 1.0
+Date: 2019-07-03
+Author: yadeem
+Maintainer: yadeem <yadeem@gmail.com>
+Description: RUtil package applies fundamental utilities for other pakcages
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.1)
+Depends: evaluate, glue, logger, readr, stringi, stringr, tools, XML
+LinkingTo: Rcpp
+RoxygenNote: 7.2.1
+Encoding: UTF-8

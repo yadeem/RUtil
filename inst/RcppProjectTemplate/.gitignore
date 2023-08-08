@@ -1,0 +1,14 @@
+.Rhistory
+*.vcxproj.user
+
+NAMESPACE
+RcppExports.cpp
+RcppExports.R
+
+*.o
+*.dll
+*.so
+bin
+
+*.Rd
+!RcppPrjTmpl-package.Rd
